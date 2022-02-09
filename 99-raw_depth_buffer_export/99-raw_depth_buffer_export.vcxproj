@@ -161,6 +161,9 @@
     <ClInclude Include="FormatEnum.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="99-raw_depth_buffer_export.rc" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
