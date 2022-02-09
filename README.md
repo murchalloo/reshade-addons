@@ -1,4 +1,4 @@
-# ReshadeAddons
+# reshade-addons
 Addons for reshade 5.0
 
 ## 99-raw_depth_buffer_export
