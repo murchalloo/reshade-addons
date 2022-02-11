@@ -1,6 +1,7 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by 99-raw_depth_buffer_export.rc
+// Used by 99-frame_capture.rc
+//
 
 // Next default values for new objects
 // 

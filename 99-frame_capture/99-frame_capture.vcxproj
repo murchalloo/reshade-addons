@@ -24,6 +24,7 @@
     <ProjectGuid>{e252a379-9974-4276-8d63-612b72558250}</ProjectGuid>
     <RootNamespace>My99rawdepthbufferexport</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>99-frame_capture</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -84,7 +85,7 @@
     </LinkIncremental>
     <OutDir>..\bin\$(Configuration) Examples $(Platform)\</OutDir>
     <IntDir>..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>raw_depth_buffer_export</TargetName>
+    <TargetName>frame_capture</TargetName>
     <TargetExt>.addon</TargetExt>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
@@ -155,14 +156,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="raw_depth_buffer_export.cpp" />
+    <ClCompile Include="frame_capture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FormatEnum.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="99-raw_depth_buffer_export.rc" />
+    <ResourceCompile Include="99-frame_capture.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

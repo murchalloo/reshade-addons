@@ -69,10 +69,10 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "murchalloo"
             VALUE "FileDescription", "TODO: <File description>"
-            VALUE "FileVersion", "1.0.0.1"
-            VALUE "InternalName", "raw_depth_buffer_export.addon"
+            VALUE "FileVersion", "1.0.2.0"
+            VALUE "InternalName", "frame_capture.addon"
             VALUE "LegalCopyright", "Copyright (C) 2022"
-            VALUE "OriginalFilename", "raw_depth_buffer_export.addon"
+            VALUE "OriginalFilename", "frame_capture.addon"
             VALUE "ProductName", "TODO: <Product name>"
             VALUE "ProductVersion", "1.0.0.1"
         END
