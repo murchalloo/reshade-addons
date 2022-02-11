@@ -142,11 +142,6 @@ static void on_destroy_effect_runtime(effect_runtime* runtime)
 	runtime->destroy_private_data<stored_buffers_inst>();
 }
 
-static void update_effect_runtime(effect_runtime* runtime)
-{
-	//on_begin_render_effects(runtime, runtime->get_device());
-}
-
 static void on_begin_render_effects(effect_runtime* runtime, command_list* cmd_list, resource_view, resource_view)
 {
 	stored_buffers_inst& sbi = runtime->get_private_data<stored_buffers_inst>();
@@ -591,8 +586,6 @@ void register_addon_FC()
 
 	reshade::register_event<reshade::addon_event::reshade_present>(on_reshade_present);
 	reshade::register_event<reshade::addon_event::reshade_begin_effects>(on_begin_render_effects);
-
-	reshade::register_event<reshade::addon_event::reshade_reloaded_effects>(update_effect_runtime);
 }
 void unregister_addon_FC()
 {
@@ -604,8 +597,6 @@ void unregister_addon_FC()
 
 	reshade::unregister_event<reshade::addon_event::reshade_present>(on_reshade_present);
 	reshade::unregister_event<reshade::addon_event::reshade_begin_effects>(on_begin_render_effects);
-
-	reshade::unregister_event<reshade::addon_event::reshade_reloaded_effects>(update_effect_runtime);
 }
 
 extern "C" __declspec(dllexport) const char* NAME = "Frame Capture";
